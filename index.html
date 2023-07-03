@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Styles for header and footer */
+    header, footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Table styles */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        border: 0;
+      }
+
+      table caption {
+        font-size: 1.3em;
+      }
+
+      table thead {
+        display: none;
+      }
+
+      table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+      }
+
+      table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+      }
+
+      table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 10px;
+      }
+
+      table td:last-child {
+        border-bottom: 0;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/Screenshot 2023-04-14 140054.png" alt="DimplesGlow Logo" width="150">
+    <h1>DimplesGlow Skincare</h1>
+    <h3>"Glow Beyond Ordinary...</h3>
+  </header>
+
+  <div class="container">
+    <table>
+      <caption><strong>Product Price List</strong></caption>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Product">Pearl white full kit</td>
+          <td data-label="Price">150€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl white mini kit</td>
+          <td data-label="Price">110€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Halfcast set</td>
+          <td data-label="Price">105€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">halcast mini kit</td>
+          <td data-label="Price">85€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Luxury Full Kit</td>
+          <td data-label="Price">115€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Luxury mini kit</td>
+          <td data-label="Price">90€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">maintainace set</td>
+          <td data-label="Price">85€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Kiddies full kit</td>
+          <td data-label="Price">65€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Kiddies kit with body lotion</td>
+          <td data-label="Price">47€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Acne Set</td>
+          <td data-label="Price">50€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Acne Set With Vitamin c Serum</td>
+          <td data-label="Price">65€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Knuckle Set</td>
+          <td data-label="Price">40€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pimples Set</td>
+          <td data-label="Price">40€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Sunburn Set</td>
+          <td data-label="Price">40€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">3x Whitening Face Set</td>
+          <td data-label="Price">60€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Acne Soap</td>
+          <td data-label="Price">25€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl White LOtion</td>
+          <td data-label="Price">45€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl white Face Cream</td>
+          <td data-label="Price">25€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl white Body Scrub</td>
+          <td data-label="Price">20€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl white mini kit</td>
+          <td data-label="Price">110€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl white Soap</td>
+          <td data-label="Price">25€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl white Face soap</td>
+          <td data-label="Price">12€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Pearl white oil</td>
+          <td data-label="Price">35€</td>
+        </tr>
+        <tr>
+          <td data-label="Product">Ultra Whitening Body Milk</td>
+          <td data-label="Price">40€</td>
+        </tr>
+        <!-- Add more rows for additional products -->
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 DimplesGlow. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
