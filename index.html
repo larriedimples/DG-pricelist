@@ -2,18 +2,88 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Wix+Madefor+Display:wght@700;800&display=swap" rel="stylesheet">
+
+
+
+  
+
   <style>
     /* Styles for header and footer */
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100%;
+      width: 100%;
+      font-size: 15px;
+      background-image: url(images/darren-nunis-cxE7SXKnzv0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Architects Daughter', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Wix Madefor Display', sans-serif;
+
+    }
+    header img{
+      border-radius: 75px;
+    }
+    header h1, h3{
+      color: purple;
+    }
+    footer{
+      background-color:lightpink;
+    }
+    
     header, footer {
-      background-color: #f2f2f2;
+     
       padding: 20px;
       text-align: center;
     }
+    .socials{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      padding-top: 30px;
+    }
+    .socials .fa-instagram:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.socials .fa-whatsapp:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.socials a{
+  text-decoration: none;
+  color: purple;
+  font-weight: bold;
+}
+footer p{
+  color: purple;
+}
 
     /* Table styles */
     .container {
       max-width: 600px;
       margin: 0 auto;
+    }
+    caption{
+      color: purple;
     }
 
     table {
@@ -25,7 +95,11 @@
       padding: 8px;
       text-align: left;
       border-bottom: 1px solid #ddd;
+      font-size: 1.2rem;
+      color: purple;
     }
+  
+
 
     @media screen and (max-width: 600px) {
       table {
@@ -144,7 +218,7 @@
         </tr>
         <tr>
           <td data-label="Product">Pimples Set</td>
-          <td data-label="Price">40€</td>
+          <td data-label="Price">35€</td>
         </tr>
         <tr>
           <td data-label="Product">Sunburn Set</td>
@@ -159,7 +233,7 @@
           <td data-label="Price">25€</td>
         </tr>
         <tr>
-          <td data-label="Product">Pearl White LOtion</td>
+          <td data-label="Product">Pearl White Lotion</td>
           <td data-label="Price">45€</td>
         </tr>
         <tr>
@@ -259,6 +333,66 @@
 <td data-label="Product">Kiddies Nourishing Oil</td>
 <td data-label="Price">12€</td>
 </tr>
+<td data-label="Product">Kiddies Body Lotion</td>
+<td data-label="Price">20€</td>
+</tr>
+<td data-label="Product">Knuckle cream</td>
+<td data-label="Price">12€</td>
+</tr>
+<tr>
+<td data-label="Product">Knuckle Scrub</td>
+<td data-label="Price">12€</td>
+</tr>
+<td data-label="Product">Pimples Face cream</td>
+<td data-label="Price">12€</td>
+</tr>
+<td data-label="Product">Pimples Face Cleanser</td>
+<td data-label="Price">12€</td>
+</tr>
+<tr>
+<td data-label="Product">Pimples Soap</td>
+<td data-label="Price">10€</td>
+</tr>
+<td data-label="Product">Knuckle Cleanser</td>
+<td data-label="Price">12€</td>
+</tr>
+<td data-label="Product">Knickles Maintenance Oil</td>
+<td data-label="Price">8€</td>
+</tr>
+<tr>
+<td data-label="Product">Pinklips cream</td>
+<td data-label="Price">12€</td>
+</tr>
+<td data-label="Product">Pinklips With Lip Brush</td>
+<td data-label="Price">15€</td>
+</tr>
+<td data-label="Product">Dark Hands And feet Set</td>
+<td data-label="Price">28€</td>
+</tr>
+<tr>
+<td data-label="Product">Surnburn Cleanser</td>
+<td data-label="Price">15€</td>
+</tr>
+<td data-label="Product">Sunburn Cream</td>
+<td data-label="Price">15€</td>
+</tr>
+<td data-label="Product">Sunscreen</td>
+<td data-label="Price">5€</td>
+</tr>
+<tr>
+<td data-label="Product">3x Extreme Whitening Soap</td>
+<td data-label="Price">20€</td>
+</tr>
+<td data-label="Product">Botanicals Deep Cleansing Face Mud</td>
+<td data-label="Price">12€</td>
+</tr>
+<td data-label="Product">Luxe White Body Butter</td>
+<td data-label="Price">25€</td>
+</tr>
+<tr>
+<td data-label="Product">Natural Remedies hair Oil and Butter</td>
+<td data-label="Price">35€</td>
+</tr>
       
         <!-- Add more rows for additional products -->
       </tbody>
@@ -267,6 +401,11 @@
 
   <footer>
     <p>&copy; 2023 DimplesGlow. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-instagram"></i> <br> dimp_lesglow</a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i> <br> 015781020955</a>
+     
+    </div>
   </footer>
 </body>
 </html>
